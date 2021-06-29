@@ -13,7 +13,7 @@
 
 5. Now that you've initalized your directory, run `gcloud app deploy`. Usually this is a super simple command, but this first time you run this command to deploy to a live website, it'll ask you which location you'd like to deploy to. I usually use `us-central` (option number 17), because it will result in moderate speeds for anyone in the United States. If most of your users are in New York or California, then you may want to choose a more appropriate location to host your site, such as Eatsern or Western hosting zones. After selecting the locatio , then type `Y` when it asks you Y or n. After typing `Y`, if it gives you an error, then simply run `gcloud app deploy` again. Please see success message in screenshot below:
 
-![Success Message Terminal](static/images/terminal.png)
+![Success Message Terminal](static/images/terminal2.png)
 
 ### Notes
 
