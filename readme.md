@@ -15,3 +15,6 @@
 
 ![Success Message Terminal](static/images/terminal.png)
 
+### Notes
+
+* You will most likely want to use additional Python libraries to build your website. For example, you may want to import pandas or import sqlalchemy, in which case, you'll need to add those libraries to the `requirements.txt` file. To view the version numbers of each of the python libraries that are installed on your machine, simply open your terminal/gitbash and type the command `pip list`. This shows all downloaded libraries, so you'll need to copy/paste into the `requirements.txt` only the libraries needed to run your website.
