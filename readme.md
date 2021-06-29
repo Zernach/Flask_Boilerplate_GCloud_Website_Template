@@ -1,42 +1,17 @@
-# App Engine Starter - Python 3 Edition
+# Google Cloud App Engine Website
+## Website Template Built Using Python's Flask
 
-In August 2018, Google finally saw fit to bless us with [Python 3 on App Engine's standard environment](https://cloud.google.com/blog/products/gcp/introducing-app-engine-second-generation-runtimes-and-python-3-7). Goodbye Python 2 and webapp2, hello Python 3 and Flask.
+### Instructions
 
-**Built with**:
-- [Bootstrap v4.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-- [Flask v1.0.2](http://flask.pocoo.org/)
-- [Jinja2](http://jinja.pocoo.org/docs/2.10/)
+1. Install the [Google Cloud SDK](https://cloud.google.com/sdk/).
 
-Hosted on [Google App Engine](https://cloud.google.com/appengine/).
+2. Create a new project in the [Google Cloud Console](https://console.cloud.google.com/). When it asks you for a Project Name, please remember that the name of your project will be listed in your new website's default URL. For example, a GCloud project name of `flask-boilerplate-website` will result in a URL of [https://flask-boilerplate-website.uc.r.appspot.com](https://flask-boilerplate-website.uc.r.appspot.com). Optionally, you can always purchase a new domain name, such as flask-boilerplate-website.com, and then mirror your site to the professional URL.
 
-# Usage
+3. After your project has finished being created (it may take a minute or two), select your new project.
 
-First off, go to [Google Cloud Console](https://console.cloud.google.com/) and create a new project. Then install the [Google Cloud SDK](https://cloud.google.com/sdk/).
+4. Next, download this entire repository to your machine as a ZIP file. Open the Flask_Boilerplate_Website_Template directory in your terminal (or in GitBash if on Windows). With that folder open, run `gcloud init`, and when it prompts your for which project to select, type the number that corresponds to your new project name. Running `gcloud init` is a one-time step, so that your computer knows that the directory that you're in can be pushed to GCloud.
 
-## Development
+5. Now that you've initalized your directory, run `gcloud app deploy`. Usually this is a super simple command, but this first time you run this command to deploy to a live website, it'll ask you which location you'd like to deploy to. I usually use `us-central` (option number 17), because it will result in moderate speeds for anyone in the United States. If most of your users are in New York or California, then you may want to choose a more appropriate location to host your site, such as Eatsern or Western hosting zones. After selecting the locatio , then type `Y` when it asks you Y or n. After typing `Y`, if it gives you an error, then simply run `gcloud app deploy` again. Please see success message in screenshot below:
 
-1. Open a shell.
+![Success Message Terminal](static/images/terminal.png)
 
-2. `pipenv install` to install Flask to a virtual environment (must have [pipenv](https://docs.pipenv.org/) already installed).
-
-3. `pipenv shell` to open a new shell with the virtual environment activated.
-
-4. `python main.py` to start a local development server at http://127.0.0.1:8080/
-
-## Deployment
-
-If Google Cloud SDK is set to this project:
-
-1. Open shell in the directory containing "app.yaml"
-
-2. Run `gcloud app deploy`
-
-If Google Cloud SDK **is not** set to this project you can switch to it with
-
-```bash
-    gcloud config set project PROJECT_ID
-```
-
-### References
-
-Bootstrap's [starter template](https://getbootstrap.com/docs/4.1/examples/starter-template/) was adapted slightly (navbar made semi-automatic with Jinja2, removed a bunch of stuff).
