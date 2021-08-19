@@ -1,21 +1,32 @@
-
-/**
- * Padding for the body (to accomodate the fixed nav-bar).
- */
 body {
   padding-top: 5rem;
 }
 
-/**
- * Responsive Text (apparently I'm on my own here)
- * https://v4-alpha.getbootstrap.com/content/typography/#responsive-typography
- */
-p {
-  font-size: 1.2em;
+h1 {
+  color: #fff;
 }
 
+h2 {
+  color: #eee;
+}
 
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+h3 {
+  color: #ddd;
+}
+
+h4 {
+  color: #ccc;
+}
+
+h5 {
+  color: #bbb;
+}
+
+h6 {
+  color: #aaa;
+}
+
+p {
+  color: #fff;
+  font-size: 20px;
 }
